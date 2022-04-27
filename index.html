@@ -20,11 +20,12 @@
   </head>
   <body>
     <header class="header">
+      <div class="overlay"></div>
       <nav class="navbar">
         <div class="nav-center">
           <div class="nav-header">
             <img src="./images/logo.svg" alt="">
-            <button class="menu-btn">
+            <button id="menu-btn" class="menu-btn">
               <img src="./images/icon-menu.svg" alt="">
             </button>
           </div>
@@ -44,33 +45,82 @@
         </div>
       </nav>
 
+      <div class="menu">
+        <button id="close-menu-btn" class="close-menu-btn">
+          <img src="./images/icon-close-menu.svg" alt="">
+        </button>
+        <div class="menu-links">
+          <div class="features">
+            <h3>Features</h3>
+            <img class="open" src="./images/icon-arrow-down.svg" alt="">
+            <img class="close" src="./images/icon-arrow-up.svg" alt="">
+          </div>
+          <div class="feature-contents">
+            <a href="#" class="feature-content">
+              <img src="./images/icon-todo.svg" alt="">
+              <h3>Todo List</h3>
+            </a>
+            <a href="#" class="feature-content">
+              <img src="./images/icon-calendar.svg" alt="">
+              <h3>Calender</h3>
+            </a>
+            <a href="#" class="feature-content">
+              <img src="./images/icon-reminders.svg" alt="">
+              <h3>Remainder</h3>
+            </a>
+            <a href="#" class="feature-content">
+              <img src="./images/icon-planning.svg" alt="">
+              <h3>Planning</h3>
+            </a>
+          </div>
+
+          <a href="#"><h3 class="menu-link">Company</h3></a>
+          <a href="#"><h3 class="menu-link">Our Team</h3></a>
+          <a href="#"><h3 class="menu-link">Blog</h3></a>
+          <a href="#"><h3 class="menu-link">Careers</h3></a>
+          <a href="#"><h3 class="menu-link">About</h3></a>
+        
+
+          <div class="menu-btns">
+            <a href="#"><p>Login</p></a>
+            <button class="menu-register-btn">Register</button>
+          </div>
+        </div>
+      </div>
+
       <section class="hero">
         <div class="hero-section">
-          <div class="hero-image">
-            <img src="./images/image-hero-mobile.png" alt="">
+          <div class="hero-image-mobile">
+            <img class="img" src="./images/image-hero-mobile.png" alt="">
           </div>
           <div class="hero-info">
             <h1>Make remote work</h1>
             <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
             <button class="hero-btn">Learn more</button>
+            <div class="brands">
+              <div class="brand">
+                <img class="img" src="./images/client-databiz.svg" alt="">
+              </div>
+              <div class="brand">
+                <img class="img" src="./images/client-audiophile.svg" alt="">
+              </div>
+              <div class="brand">
+                <img class="img" src="./images/client-meet.svg" alt="">
+              </div>
+              <div class="brand">
+                <img class="img" src="./images/client-maker.svg" alt="">
+              </div>
+            </div>
           </div>
-          <div class="brands">
-            <div class="brand">
-              <img src="./images/client-databiz.svg" alt="">
-            </div>
-            <div class="brand">
-              <img src="./images/client-audiophile.svg" alt="">
-            </div>
-            <div class="brand">
-              <img src="./images/client-meet.svg" alt="">
-            </div>
-            <div class="brand">
-              <img src="./images/client-maker.svg" alt="">
-            </div>
+         
+          <div class="hero-image-desktop">
+            <img class="img" src="./images/image-hero-desktop.png" alt="">
           </div>
         </div>
       </section>
     </header>
     </div>
+
+    <script src="./javaScript/app.js"></script>
   </body>
 </html>
